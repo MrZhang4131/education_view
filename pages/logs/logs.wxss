@@ -1,0 +1,15 @@
+/* pages/logs/logs.wxss */
+.index {
+    width: 100%;
+    height: 100rpx;
+}
+.con {
+    display: flex;
+    height: 120rpx;
+}
+.conlast {
+    height: 200rpx;
+}
+.button {
+    text-align: center;
+}

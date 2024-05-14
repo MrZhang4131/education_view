@@ -1,0 +1,12 @@
+/* pages/detial/detial.wxss */
+.detial{
+    text-align: center;
+    font-size: 50rpx;
+    color:rgb(0, 216, 180);
+    font-family:cursive;
+}
+.text{
+    height: 800rpx;
+    font-size: 40rpx;
+    font-family:cursive;
+}

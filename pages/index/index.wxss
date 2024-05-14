@@ -1,0 +1,21 @@
+.information {
+    width: 720rpx;
+    height: 1300rpx;
+}
+.text {
+    width: 30%;
+}
+.con {
+    display: flex;
+}
+.section__title {
+    color: rgb(106, 208, 255);
+    font-size: 22px;
+}
+.range {
+    color: rgb(106, 208, 255);
+    font-size: 20px;
+}
+.box {
+    height: 200rpx;
+}

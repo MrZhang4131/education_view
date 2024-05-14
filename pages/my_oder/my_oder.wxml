@@ -1,0 +1,11 @@
+<!--pages/detial/detial.wxml-->
+
+<!-- <view class='detial'>{{value.no}}</view> -->
+<view class='detial'>科目：{{value.major}}</view>
+<view class='detial'>费用：{{value.fee}}/时</view>
+<view class='detial'>地址：{{value.addr}}</view>
+<view class='detial'>时间：{{value.time}}</view>
+<scroll-view class="text">
+{{value.text}}
+</scroll-view>
+<van-button type="primary" color="#62d5b6" size="large" bindtap="delect_oder">删除订单</van-button>

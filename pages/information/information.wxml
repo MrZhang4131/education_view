@@ -1,0 +1,29 @@
+<!--pages/information/information.wxml-->
+<view class="backlan">
+    <view class="null">
+        <view wx:if="{{target==0}}" style="color: rgb(0, 216, 180);font-size: 40rpx;">家长版：</view>
+        <view wx:else style="color: rgb(0, 216, 180);font-size: 40rpx;">学生版：</view>
+        <van-button plain type="primary" color="#62d5b6" bindtap="change">切换身份</van-button>
+    </view>
+    <view class="userinfo" >
+        <view class="userinfo_name"><view class="userinfo_name1">{{userInfo.nickName}}</view></view>
+        <view class="userinfo_image"><image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"/></view>
+    </view>
+</view>
+<view wx:if="{{target==0}}"><view class="text">我的订单：（家长版只显示创建的订单）</view>
+<scroll-view class="information">
+    <view wx:for="{{value}}" wx:key="index" bindtap="turn" data-oder="{{item}}"><van-cell-group inset>
+            <van-cell title="{{item.major}}" value="{{item.fee}}" />
+            <van-cell title="{{item.addr}}" value="{{item.time}}" label="{{item.text}}" />
+        </van-cell-group></view>
+</scroll-view></view>
+
+<view wx:else=""><view class="text">我的订单：（学生版只显示接单的订单）</view>
+<scroll-view class="information">
+    <view wx:for="{{student_id_value}}" wx:key="index" bindtap="turn" data-oder="{{item}}"><van-cell-group inset>
+            <van-cell title="{{item.major}}" value="{{item.fee}}" />
+            <van-cell title="{{item.addr}}" value="{{item.time}}" label="{{item.text}}" />
+        </van-cell-group></view>
+</scroll-view></view>
+{{openid}}
+

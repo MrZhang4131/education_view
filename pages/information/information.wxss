@@ -1,0 +1,43 @@
+/* pages/information/information.wxss */
+.backlan{
+    height: 200rpx;
+    text-align: left;
+    display: flex;
+}
+.userinfo-avatar {
+    overflow: hidden;
+    width: 160rpx;
+    height: 160rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+  }
+.userinfo_name{
+    display: flex;
+    height: 200rpx;
+    width: 200rpx;
+}
+.userinfo{
+    height: 200rpx;
+    width: 400rpx;
+    display: flex;
+}
+.userinfo_image{
+    height: 200rpx;
+    width: 200rpx;
+}
+.null{
+    height: 200rpx;
+    width: 250rpx;
+}
+.userinfo_name1{
+    align-self:center;
+    font-size: 80rpx;
+    color:rgb(0, 216, 180)
+}
+.information{
+    height: 1000rpx;
+}
+.text{
+    font-size: 40rpx;
+    color:rgb(0, 216, 180)
+}

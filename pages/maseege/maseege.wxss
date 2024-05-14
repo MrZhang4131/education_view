@@ -1,0 +1,11 @@
+/* pages/maseege/maseege.wxss */
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userInfo image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 200rpx;
+}

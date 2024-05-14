@@ -1,0 +1,67 @@
+<view><van-picker 
+    visible-item-count="3"
+columns="{{ columns }}" bind:change="onChange" /></view>
+
+<view class="con">
+
+<view class="index"><van-cell-group>
+  <van-field
+    model:value="{{ fee }}"
+    placeholder="费用/课时"
+    border="{{ false }}"
+    label="费用/课时"
+  />
+</van-cell-group>
+</view>
+</view>
+
+<view class="con">
+
+<view class="index"><van-cell-group>
+  <van-field
+    model:value="{{ addr }}"
+    placeholder="地址"
+    border="{{ false }}"
+    label="地址"
+  />
+</van-cell-group>
+</view>
+</view>
+
+
+<view class="con">
+
+<view class="index"><van-cell-group>
+  <van-field
+    model:value="{{ text }}"
+    placeholder="介绍"
+    border="{{ false }}"
+    label="介绍"
+  />
+</van-cell-group>
+</view>
+</view>
+
+<view class="con">
+
+<view class="index"><van-cell-group>
+  <van-field
+    model:value="{{ telephone }}"
+    placeholder="联系方式"
+    border="{{ false }}"
+    label="联系方式"
+  />
+</van-cell-group>
+</view>
+</view>
+
+<view class="conlast"><van-cell-group>
+  <van-field
+    model:value="{{ time }}"
+    placeholder="时间"
+    border="{{ false }}"
+    label="时间"
+  />
+</van-cell-group></view>
+<view class="button"><van-button type="info" size="large" bindtap="oders">提交</van-button></view>
+{{openid}}

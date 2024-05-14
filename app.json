@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/maseege/maseege",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/test/test",
+        "pages/information/information",
+        "pages/detial/detial",
+        "pages/my_oder/my_oder"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "木子文化",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "selectedIconPath": "image/tabbar2.png",
+                "iconPath": "image/tabbar1.png",
+                "pagePath": "pages/index/index",
+                "text": "查询订单"
+            },
+            {
+                "selectedIconPath": "image/tabbar4.png",
+                "iconPath": "image/tabbar3.png",
+                "pagePath": "pages/logs/logs",
+                "text": "创建订单"
+            },
+            {
+                "selectedIconPath": "image/tabbar2.png",
+                "iconPath": "image/tabbar1.png",
+                "pagePath": "pages/information/information",
+                "text": "我的"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-popup": "@vant/weapp/popup/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-picker": "@vant/weapp/picker/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-datetime-picker": "@vant/weapp/datetime-picker/index"
+    }
+}

@@ -1,0 +1,51 @@
+
+<view class="con">
+    <view class="text">
+        <view class="box">
+            <view class="section__title">学科选择</view>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+            学科：{{array[index]}}
+            </view>
+            </picker>
+        </view>
+
+        <view class="box">
+            <view class="range">最高价/课时</view>
+            <van-cell-group>
+            <van-field
+            model:value="{{ rangemax }}"
+            placeholder="请输入用户名"
+            border="{{ false }}"
+            />
+            </van-cell-group>
+        </view>
+
+        <view class="box">
+            <view class="range">最低价/课时</view>
+            <van-cell-group>
+            <van-field
+            model:value="{{ rangemin }}"
+            placeholder="请输入用户名"
+            border="{{ false }}"
+            />
+            </van-cell-group>
+        </view>
+        
+        
+        <view class="box">
+            <van-button size="large" type="info" bindtap="condition_select">查询</van-button>
+        </view>
+
+
+        
+
+       
+</view>
+    <scroll-view class="information" scroll-y>
+        <view wx:for="{{value}}" wx:key="index" bindtap="turn" data-oder="{{item}}"><van-cell-group inset>
+            <van-cell title="{{item.major}}" value="{{item.fee}}" />
+            <van-cell title="{{item.addr}}" value="{{item.time}}" label="{{item.text}}" />
+        </van-cell-group></view>
+    </scroll-view>
+</view>

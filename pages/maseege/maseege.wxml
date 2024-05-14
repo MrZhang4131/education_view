@@ -1,0 +1,11 @@
+<!--pages/maseege/maseege.wxml-->
+
+<button wx-if="{{!userInfo}}" bindtap="login">获取头像昵称</button>
+<view wx:else class="userInfo">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+</view>
+{{openid}}
+{{code}}
+<!-- <button bindtap="id">获取头像昵称</button> -->
+
